@@ -1,12 +1,9 @@
-comida = int(input("Indique a opção desejada: "))
+# Variáveis
+nome = input("Informe o seu nome: ")
+idade = int(input("Informe a sua idade: "))
 
-# Seleção de opções
-match comida:
-    case 1:
-        print("Pizza. ")
-    case 2:
-        print("Hamburguer. ")
-    case 3:
-        print("Salada. ")
-    case _:
-        print("Opção inválida!")
+# Verifica a idade
+if idade >=16:
+    print(f"Olá. {nome}! Você tem {idade} anos. Então você já tem idade para votar.")
+else:
+    print(f"Olá. {nome}! Você tem {idade} anos. Então você ainda não tem idade para votar.")
